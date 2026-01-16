@@ -23,6 +23,8 @@ class Prism:
         self.window = Tk()
         self.window.title("Prism")
         self.window.configure(bg=self.GREY)
+        self.app_icon = PhotoImage(file="prism_app_icon.png")
+        self.window.iconphoto(True, self.app_icon)
 
         #Centre the window (thank
         screen_width = self.window.winfo_screenwidth()
